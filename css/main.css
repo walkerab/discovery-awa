@@ -1,0 +1,19 @@
+/* http://stackoverflow.com/a/16420440 */
+pre {
+    overflow-x: auto;
+}
+pre code {
+    word-wrap: normal;
+    white-space: pre;
+}
+
+.content img {
+	max-width: 100%;
+}
+
+.hl-line {
+	display: block;
+	background-color: #C7ECFC;
+	margin: 0 -15px;
+	padding-left: 15px;
+}
