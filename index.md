@@ -34,7 +34,7 @@ For HTML we strictly use HTML5. This means every web page should have
 
 at the top.
 
-This however does not mean you should use the new HTML5 structural elements such as `&lt;header&gt;`, `&lt;footer&gt;`, `&lt;section&gt;`, `&lt;aside&gt;`, etc. While it is _ok_ to use them, I would advise against it. There are is much debate regarding their usage and this can be confusing for students.
+This however does not mean you should use the new HTML5 structural elements such as `<header>`, `<footer>`, `<section>`, `<aside>`, etc. While it is _ok_ to use them, I would advise against it. There are is much debate regarding their usage and this can be confusing for students.
 
 ### CSS
 
@@ -96,7 +96,7 @@ The lesson material will make reference to shortcuts and tips specific to Sublim
 
 OOP is a big topic and it simply can't fit within the scope of this course.
 
-Students will be expected to work with OO libraries using `-&gt;` and `new`, but they will not be required to create their own PHP classes or understand inheritance.
+Students will be expected to work with OO libraries using `->` and `new`, but they will not be required to create their own PHP classes or understand inheritance.
 
 ## Outline
 

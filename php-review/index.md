@@ -79,7 +79,7 @@ Also we want to add in the column that will contain our main content.
 </div>
 ```
 
-Let's generate some content for our home page. Go to [Blind Text Generator](http://www.blindtextgenerator.com/) and set it to "Far Far Away", 300 words, 6 paragraphs, and make sure to set it to display `&lt;p&gt;` tags.
+Let's generate some content for our home page. Go to [Blind Text Generator](http://www.blindtextgenerator.com/) and set it to "Far Far Away", 300 words, 6 paragraphs, and make sure to set it to display `<p>` tags.
 
 <div class="alert alert-info">
 	While it is common practice to use "Lorem Ipsum..." for filler text, it is bad practice. One should prefer using text written in their own language. That way you can test your pages for readability.
@@ -210,7 +210,7 @@ And what website is complete without a copyright in the footer!
 
 #### Putting it Together
 
-We now have all of the components that will be repeated for every page: the navigation, the contact information, and the footer. The only thing that changes between pages is the `&lt;title&gt;` and what's inside of the `.col-sm-8`.
+We now have all of the components that will be repeated for every page: the navigation, the contact information, and the footer. The only thing that changes between pages is the `<title>` and what's inside of the `.col-sm-8`.
 
 One of the simplest uses for PHP is to `include` or `require` in snippets from other documents. We do this to avoid repeating code in multiple places. It also makes site maintenance/updates easier.
 
@@ -377,7 +377,7 @@ You should now have a functioning, PHP-driven website.
 
 ## Student Exercises
 
-1. Modify the `.thumbnail`s so they are links (`&lt;a&gt;`) to a 640x480 version of the same image.
+1. Modify the `.thumbnail`s so they are links (`<a>`) to a 640x480 version of the same image.
 2. Lorem Pixel provides several categories of images besides "city".
 	1. Create a file called `image-categories.php`
 	2. Inside the file define a variable, `$image_categories` , that is an array of strings of all of the categories available on Lorem Pixel.
