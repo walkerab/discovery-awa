@@ -7,6 +7,8 @@ Work through [Advanced Arrays and Maps on Codecademy](http://www.codecademy.com/
 
 ## Exercises
 
+### Exercise 1
+
 Create an associative array that describes yourself:
 
 ```php
@@ -18,6 +20,8 @@ $me = array(
 ```
 
 Now create a `foreach` loop to output a `<dl>` that contains the information.
+
+### Exercise 2
 
 Given:
 

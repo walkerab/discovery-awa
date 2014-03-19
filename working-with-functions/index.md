@@ -11,7 +11,7 @@ This section is an attempt to give students more practice creating functions as 
 
 Given the examples provided on codecademy, functions look rather stupid. It can be hard to demonstrate their usefulness until you have constructed large programs.
 
-<!-- ?Banana Split Example -->
+<!-- ?Banana Split Example? -->
 
 Reusable
 	DRY Principles
@@ -25,6 +25,11 @@ function page_title($page_name = '') {
 }
 ?>
 ```
+
+`age_in_dog_years`
+
+`fahrenheit_to_centigrade`
+`centigrade_to_fahrenheit`
 
 <!-- ?include_dir -->
 
@@ -176,14 +181,121 @@ and bs_table becomes:
 <?php } ?>
 ```
 
-Create Widget functions for `html_dl` and `html_nav`
 
 Modify `html_table` such that it adds the classes `.odd` and `.even` to the rows.
 Modify `html_table` such that it takes a parameter, `$first_row_as_header`. It should default to being `false`. If it is `true` then the first row should be inside of a `<thead>` and should use `<th>` instead of `<td>` for the cells.
 
+<!--
 ?Recursion?
 	Html generator
 	Dividing a list into columns
+-->
 
 
 ## function scope
+
+## Exercises
+
+Make sure you test your code!
+
+
+Create a function `ucase_each_word`
+
+```php
+<?php
+function ucase_each_word($phrase) {
+	$words = explode(' ', $phrase);
+	$words = array_map('ucfirst', $words);
+	return implode(' ', $words);
+}
+?>
+```
+
+### 1
+
+Create a widget function called `html_nav`. It takes an associative array of link text mapped to URLs and outputs an appropriate unordered list of links.
+
+For example
+
+```php
+$navigation_links = array(
+	'Home' => 'index.php',
+	'Our Services' => 'services.php',
+	'Contact Us' => 'contact.php'
+);
+html_nav($navigation_links);
+```
+
+would output
+
+```html
+<ul>
+	<li>
+		<a href="index.php">Home</a>
+	</li>
+	<li>
+		<a href="services.php">Our Services</a>
+	</li>
+	<li>
+		<a href="contact.php">Contact Us</a>
+	</li>
+</ul>
+```
+
+
+### 2(a)
+
+Write a widget function called `html_dl` that takes a single associative array as a paramater and outputs a `<dl>` of the data.
+
+For example
+
+```php
+<?php
+$my_dog = array(
+	'name' => 'Touser',
+	'breed' => 'Jack Russell Terrier',
+	'hair color' => 'white',
+	'age' => 8,
+	'age in dog years' => age_in_dog_years(8)
+);
+html_dl($my_dog);
+?>
+```
+
+would output
+
+```html
+<dl>
+	<dt>name</dt>
+		<dd>Touser</dd>
+	<dt>breed</dt>
+		<dd>Jack Russell Terrier</dd>
+	<dt>hair color</dt>
+		<dd>white</dd>
+	<dt>age</dt>
+		<dd>8</dd>
+</dl>
+```
+
+### 2(b)
+
+Modify `html_dl` such that every word inside the `<dt>`s starts with an uppercase letter.
+
+```html
+<dl>
+	<dt>Name</dt>
+		<dd>Touser</dd>
+	<dt>Breed</dt>
+		<dd>Jack Russell Terrier</dd>
+	<dt>Hair Color</dt>
+		<dd>white</dd>
+	<dt>Age</dt>
+		<dd>8</dd>
+</dl>
+```
+
+### 3
+
+Modify the `age_in_dog_years` function we created earlier to use a more accurate model as described [here](http://en.wikipedia.org/wiki/Aging_in_dogs#Aging_profile)
+
+> [T]he first two years equal 10.5 years each, with subsequent years equaling four human years.
