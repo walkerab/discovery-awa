@@ -368,6 +368,7 @@ Also we can set default values for some things
 ```
 
 e.g.
+
 ```html
 <!DOCTYPE html>
 <html>
