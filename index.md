@@ -5,7 +5,6 @@ layout: default
 
 This document describes the course outline and recommended delivery model for the course, _Advanced Web Architecture_.
 
-
 ## Materials
 
 Students will require headphones for some lessons as they are audio/video-based.
@@ -175,6 +174,8 @@ Create functions
 	session_set
 
 Shopping cart
+
+## function scope
 
 ## Form Validation
 

@@ -117,7 +117,7 @@ include 'media-data.php';
 
 ## Exercises
 
-### Exercise 1
+### 1
 
 Given
 
@@ -187,5 +187,5 @@ Use a `foreach` loop to generate HTML as such:
 </table>
 ```
 
-### Exercise 2
+### 2
 

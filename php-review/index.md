@@ -322,7 +322,7 @@ So at the top of `services.php` we would add:
 and at the top of `index.php` we would add:
 
 ```html
-<?php $title = 'PHP Review Site'; ?>
+<?php $title = 'Home | PHP Review Site'; ?>
 ```
 
 The title should change when we click between the two pages.

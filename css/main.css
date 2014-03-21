@@ -11,6 +11,19 @@ pre code {
 	max-width: 100%;
 }
 
+.content h3 {
+	text-align: center;
+}
+
+	.content h3:before,
+	.content h3:after {
+		content: ' - ';
+	}
+
+.content h4 {
+	text-align: right;
+}
+
 .hl-line {
 	display: block;
 	background-color: #C7ECFC;
