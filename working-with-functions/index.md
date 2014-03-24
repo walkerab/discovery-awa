@@ -506,7 +506,7 @@ function ucase_each_word($phrase) {
 
 <!--
 
-### 1
+##### 1
 
 Create a widget function called `html_nav`. It takes an associative array of link text mapped to URLs and outputs an appropriate unordered list of links.
 
@@ -539,11 +539,11 @@ would output
 
 -->
 
-### 1
+#### 1
 
 Modify the `html_table` function such that it support [Bootstrap table styles](http://getbootstrap.com/css/#tables)
 
-### 2(a)
+#### 2(a)
 
 Write a widget function called `html_dl` that takes a single associative array as a paramater and outputs a `<dl>` of the data.
 
@@ -577,7 +577,7 @@ would output
 </dl>
 ```
 
-### 2(b)
+#### 2(b)
 
 Modify `html_dl` such that every word inside the `<dt>`s starts with an uppercase letter.
 
@@ -594,7 +594,7 @@ Modify `html_dl` such that every word inside the `<dt>`s starts with an uppercas
 </dl>
 ```
 
-### 3
+#### 3
 
 Modify the `age_in_dog_years` function we created earlier to use a more accurate model as described [here](http://en.wikipedia.org/wiki/Aging_in_dogs#Aging_profile)
 
