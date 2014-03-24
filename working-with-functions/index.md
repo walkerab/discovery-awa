@@ -3,13 +3,57 @@ title: Working with Functions
 layout: default
 ---
 
+## Practice Functions
+
+To familiarize students with the syntax for functions, create the following:
+
+```php
+<?php
+function age_in_dog_years($human_years) {
+	return $human_years * 7;
+}
+?>
+```
+
+```php
+<?php
+function sum($num_list) {
+	$sum = 0;
+	foreach ($num_list as $num) {
+		$sum += $num;
+	}
+	return $num;
+}
+?>
+```
+
+```php
+<?php
+function print_numbers_in_range($lower_bound, $upper_bound) {
+	for ($i = $lower_bound; $i <= $upper_bound; $i++) {
+		echo $i, '<br>';
+	}
+}
+?>
+```
+
+<!--
+
+[Formulas for converting between centigrade and fahrenheit](http://www.manuelsweb.com/temp.htm)
+`fahrenheit_to_centigrade`
+`centigrade_to_fahrenheit`
+
+-->
+
+# Applications of Functions
+
 While functions have been covered earlier in the program, at this point it may be difficult for students to understand _why_ or _where_ they would want to use them. It's not just about understanding the syntax. It's about understanding how functions are useful.
 
 This section is an attempt to give students more practice creating functions as well as illustrate their inherent usefulness.
 
 Watch this video tutorial: [php tutorial - 6.01 why use functions](http://www.youtube.com/watch?v=zM3eKOkDHAw)
 
-## Using Functions
+## Using Functions in Our Applications
 
 To stay organized we will be placing our functions into a file called `utilities.php`. We then include this file into our pages so that we may call the functions. We will start with a simple example.
 
@@ -324,20 +368,10 @@ Tables are tedious to write out manually so this function could save you lots of
 	</p -->
 </div>
 
-### Reusability
-
-Reusable
-	DRY Principles
-	Example function for [bootstrap media object](http://getbootstrap.com/components/#media)
-		useful because used on multiple pages or even multiple sites
 
 
-`age_in_dog_years`
 
 
-[Formulas for converting between centigrade and fahrenheit](http://www.manuelsweb.com/temp.htm)
-`fahrenheit_to_centigrade`
-`centigrade_to_fahrenheit`
 
 <!-- ?include_dir -->
 
@@ -382,42 +416,20 @@ e.g.
 </html>
 ```
 
+<!--
+
+### Reusability
+
+Reusable
+	DRY Principles
+	Example function for [bootstrap media object](http://getbootstrap.com/components/#media)
+		useful because used on multiple pages or even multiple sites
+
 Self Documenting		
 
 Testable
 	
-
-
-
-```php
-<?php
-function sum($num_list) {
-	$sum = 0;
-	foreach ($num_list as $num) {
-		$sum += $num;
-	}
-	return $num;
-}
-?>
-```
-
-```php
-<?php
-function roll_dice($min, $max) {
-	return mt_rand($min, $max);
-}
-?>
-```
-
-```php
-<?php
-function print_numbers_in_range($lower_bound, $upper_bound) {
-	for ($i = $lower_bound; $i <= $upper_bound; $i++) {
-		echo $i, '<br>';
-	}
-}
-?>
-```
+-->
 
 ## Widgets
 

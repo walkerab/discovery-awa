@@ -108,8 +108,8 @@ I recommend starting with the _PHP_ section and then interjecting components fro
 - [PHP Review](php-review/)
 - [Associative Arrays](associative-arrays/)
 - [Nested Arrays](nested-arrays/)
-- [Form Basics](form-basics/)
 - [Working with Functions](working-with-functions/)
+- [Form Basics](form-basics/)
 - [How the Web Works](how-the-web-works/)
 - [Cookies](cookies/)
 - [Sessions](sessions/)
@@ -126,6 +126,7 @@ Filtering a list
 - [Syntax](sql-syntax/)
 - [JOINs](sql-joins/)
 - [Normalization](sql-normalization/)
+- [Database Modelling](sql-database-modelling/)
 - [Subselects and VIEWs](sql-subselects-and-views/)
 - [RDBMS Comparison](sql-rdbms-comparison/)
 
@@ -201,3 +202,8 @@ https://github.com/j4mie/idiorm/
 # Image Manipulation
 
 http://codegeekz.com/php-image-manipulation-libraries-for-developers/
+
+# PDO
+
+http://code.tutsplus.com/tutorials/why-you-should-be-using-phps-pdo-for-database-access--net-12059
+http://code.tutsplus.com/tutorials/php-database-access-are-you-doing-it-correctly--net-25338
