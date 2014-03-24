@@ -115,14 +115,19 @@ I recommend starting with the _PHP_ section and then interjecting components fro
 - [Sessions](sessions/)
 - [Form Validation](form-validation/)
 - [Working with Files](working-with-files/)
+- [Image Manipulation](image-manipulation/)
 
 Handling paramaters with extract
 Filtering a list
 
 ### SQL
 
+- [Intro](sql-intro/)
 - [Syntax](sql-syntax/)
-
+- [JOINs](sql-joins/)
+- [Normalization](sql-normalization/)
+- [Subselects and VIEWs](sql-subselects-and-views/)
+- [RDBMS Comparison](sql-rdbms-comparison/)
 
 ### PHP & SQL
 
@@ -130,89 +135,33 @@ Filtering a list
 - [Building a CRUD Application](building-a-crud-application/)
 - [Creating a CMS](creating-a-cms/)
 
+## If Extra Time
+
+If the students have managed to work through all of the material, here are some extra topics you may wish to cover:
+
+- Version Control using git or mercurial
+- OOP in PHP
+- SASS/SCSS
+- Ruby on Rails
+- Static Site Generators
+	- Jekyll
+	- http://phrozn.info/en/
+	- https://sculpin.io/
+	- http://pico.dev7studios.com/plugins.html
+
 ***************
 
 Below are topics / notes / materials that have yet to be integrated into the above.
 
 ## Separation of Concerns
 
-## How the Web Works
-
-http://mkcohen.com/how-the-web-works-in-one-easy-lesson
-
-Where does PHP fit into the picture?
-	http://www.garshol.priv.no/download/text/http-tut.html
-		See "What is it and why do it?"
-
-## The Request-Response Loop
-
-Handlers
-
-You should always avoid having forms submit to themselves
-	Should use PRG (Post Redirect Get)
-
-## Form Basics Exercise
-
-Create a single page application for browsing all of cetegories of images on LoremPixel
-
-## Cookies
-	http://www.garshol.priv.no/download/text/http-tut.html
-		"Cookies"
-
-## Sessions
-
-http://www.sitepoint.com/php-sessions/
-
-Sessions are a special use for cookies. PHPSESSID
-
-Coat Check analogy
-
-?Faking sessions using URL params?
-
-Create functions
-	session_get
-	session_set
-
-Shopping cart
-
 ## function scope
 
-## Form Validation
-
-http://en.wikipedia.org/wiki/Post/Redirect/Get
-
-http://www.sitepoint.com/form-validation-with-php/
-
-# File Handling
-## Reading / Writing / Appending
-	
-	Populating http://getbootstrap.com/examples/carousel/ by reading a directory
-
-	Read a CSV file
 
 ## Serialization
 ### JSON?
 
-# SQL
-
-## Purpose
-
-## Tools
-
-### PHPMyAdmin
-### Adminer
-
-## Syntax - SELECT, INSERT, UPDATE, DELETE, etc
-
-## JOINs
-
 ## Normalization using ~3NF
-
-## Subselects
-
-Should be avoided when possible. Use VIEWs instead.
-
-## VIEWs
 
 ## SQL Servers
 
@@ -248,19 +197,6 @@ http://phpunit.de/
 http://www.phpandstuff.com/articles/top-10-reasons-why-you-should-use-a-php-framework
 
 https://github.com/j4mie/idiorm/
-
-# If Extra Time
-
-If the students have managed to work through all of the material, here are some extra topics you may wish to cover:
-
-- SASS/SCSS
-- Ruby on Rails
-- OOP in PHP
-- Static Site Generators
-	- Jekyll
-	- http://phrozn.info/en/
-	- https://sculpin.io/
-	- http://pico.dev7studios.com/plugins.html
 
 # Image Manipulation
 
