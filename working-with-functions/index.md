@@ -37,14 +37,6 @@ function print_numbers_in_range($lower_bound, $upper_bound) {
 ?>
 ```
 
-<!--
-
-[Formulas for converting between centigrade and fahrenheit](http://www.manuelsweb.com/temp.htm)
-`fahrenheit_to_centigrade`
-`centigrade_to_fahrenheit`
-
--->
-
 # Applications of Functions
 
 While functions have been covered earlier in the program, at this point it may be difficult for students to understand _why_ or _where_ they would want to use them. It's not just about understanding the syntax. It's about understanding how functions are useful.

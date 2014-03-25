@@ -110,6 +110,7 @@ I recommend starting with the _PHP_ section and then interjecting components fro
 - [Nested Arrays](nested-arrays/)
 - [Working with Functions](working-with-functions/)
 - [Form Basics](form-basics/)
+- *Assignment:* [Loops and Functions](assignments/loops-and-functions/)
 - [How the Web Works](how-the-web-works/)
 - [Cookies](cookies/)
 - [Sessions](sessions/)
