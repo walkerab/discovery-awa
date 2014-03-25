@@ -20,10 +20,6 @@ pre code {
 		content: ' - ';
 	}
 
-.content h4 {
-	text-align: right;
-}
-
 .hl-line {
 	display: block;
 	background-color: #C7ECFC;
