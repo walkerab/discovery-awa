@@ -203,7 +203,7 @@ I recommend using `$_REQUEST` over `$_POST` or `$_GET` because then we don't nee
 		The purpose of this technique is to prevent us having to write <code>if (isset(...))</code> around every form variable we wish to output.
 	</p>
 	<p>
-		It works rather effectively for small to mid-sized programs and site and it really does save a lot of code and confusion from students.
+		It works rather effectively for small to mid-sized programs and sites and it really does save a lot of code and confusion from students.
 	</p>
 </div>
 
@@ -219,11 +219,13 @@ If we wanted to make our form show the submitted data, we set the `value` attrib
 	<form action="">
 		<label>
 			First Name:
-			<input<!-- < -->
-				type="text"<!-- < -->
-				name="first_name"<!-- < -->
-				value="<?php echo $_REQUEST['first_name']; ?>"<!-- < -->
-			><!-- < -->
+			<!-- * -->
+			<input
+				type="text"
+				name="first_name"
+				value="<?php echo $_REQUEST['first_name']; ?>"
+			>
+			<!-- * -->
 		</label>
 	</form>
 </body>
@@ -233,9 +235,9 @@ If we wanted to make our form show the submitted data, we set the `value` attrib
 To save on writing `$_REQUEST` every time we can use an `extract`.
 
 ```html
-<?php// <
-	extract($_REQUEST);// <
-?><!DOCTYPE html><!-- < -->
+<?php // <
+	extract($_REQUEST); // <
+?><!DOCTYPE html> <!-- < -->
 <html>
 <head>
 	<title>Form Whatever Title Stuff</title>
@@ -244,11 +246,13 @@ To save on writing `$_REQUEST` every time we can use an `extract`.
 	<form action="">
 		<label>
 			First Name:
+			<!-- * -->
 			<input
 				type="text"
 				name="first_name"
-				value="<?php echo $first_name; ?>"<!-- < -->
+				value="<?php echo $first_name; ?>"
 			>
+			<!-- * -->
 		</label>
 	</form>
 </body>
@@ -259,7 +263,7 @@ Unfortunately, we are not guaranteed that `$_REQUEST['first_name']` will always 
 
 ```html
 <?php
-	$first_name = '';// <
+	$first_name = ''; // <
 	extract($_REQUEST);
 ?><!DOCTYPE html>
 <html>
