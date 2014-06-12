@@ -9,6 +9,32 @@ To familiarize students with the syntax for functions, create the following:
 
 ```php
 <?php
+function print_message($message) {
+	echo $message.'<br>';
+}
+?>
+```
+
+Functions can also have default values.
+
+```php
+<?php
+function print_message($message = 'Hello') {
+	echo $message.'<br>';
+}
+?>
+```
+
+```php
+<?php
+function sum($num1, $num2) {
+	return $num1 + $num2;
+}
+?>
+```
+
+```php
+<?php
 function age_in_dog_years($human_years) {
 	return $human_years * 7;
 }
@@ -43,7 +69,11 @@ While functions have been covered earlier in the program, at this point it may b
 
 This section is an attempt to give students more practice creating functions as well as illustrate their inherent usefulness.
 
+<!--
 Watch this video tutorial: [php tutorial - 6.01 why use functions](http://www.youtube.com/watch?v=zM3eKOkDHAw)
+
+Sadly, the video linked here is no longer available. I have been unable to find any other copies of it either.
+-->
 
 ## Using Functions in Our Applications
 
