@@ -92,7 +92,7 @@ Read [Formulas for converting between centigrade and fahrenheit](http://www.manu
 Create a single page PHP application that contains a form with:
 
 - An input field for "Degrees:"
-- A radio selection for "Convert to:"
+- A radio button group for "Convert to:"
 	- Centigrade
 	- Fahrenheit
 - A button that says "Convert"

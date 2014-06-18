@@ -383,3 +383,4 @@ You should now have a functioning, PHP-driven website.
 	2. Inside the file define a variable, `$image_categories` , that is an array of strings of all of the categories available on Lorem Pixel.
 	3. At the top of `gallery.php` `include` `image-categories.php`.
 	4. Replace the `for` loop with a `foreach` loop over `$image_categories`. Your thumbnails should be of the first image in each category. e.g. city/1, animals/1, etc.
+3. How could we rewrite the foreach loop so that is uses a for loop?

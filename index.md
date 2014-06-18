@@ -95,7 +95,7 @@ The lesson material will make reference to shortcuts and tips specific to Sublim
 
 OOP is a big topic and it simply can't fit within the scope of this course.
 
-Students will be expected to work with OO libraries using `->` and `new`, but they will not be required to create their own PHP classes or understand inheritance.
+Students will be expected to work with OO libraries using `->` and `new`, but they will not be required to create their own PHP classes or understand things like inheritance or design patterns.
 
 ## Outline
 
@@ -111,7 +111,9 @@ I recommend starting with the _PHP_ section and then interjecting components fro
 - [Working with Functions](working-with-functions/)
 - [Form Basics](form-basics/)
 - *Assignment:* [Loops and Functions](assignments/loops-and-functions/)
+- [Form Widgets](form-widgets/)
 - [How the Web Works](how-the-web-works/)
+- [Generating CSS Using PHP](generating-css-using-php/)
 - [Cookies](cookies/)
 - [Sessions](sessions/)
 - [Form Validation](form-validation/)

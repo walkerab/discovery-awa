@@ -3,7 +3,7 @@ title: Form Basics
 layout: default
 ---
 
-Form controls are covered extensively in CWT. The material in this section serves mainly as a review. The difference comes in the complexity of the applications we construct.
+Form controls are covered extensively in CWT. The material in this section serves mainly as a review. The difference now comes in the complexity of the applications we construct.
 
 ## Creating a Form
 
@@ -93,6 +93,10 @@ POST data is sent in the background while GET data is sent in the URL. It is alm
 
 From a user's perspective the biggest difference for POST and GET is that the form data is stored in the browser's history. Sometimes this is desirable e.g. a Google Search. Sometimes it is not desirable e.g. a credit card number.
 
+<div class="alert alert-info">
+	Since `GET` data is sent through the URL, we can create hyperlinks that act like form submissions. This can be useful for creating things like buttons that perform an action.
+</div>
+
 <!--
 What if we do a PRG as a GRG? Does it stay in the history?
 -->
@@ -103,11 +107,15 @@ POST data, although being sent "in the background", is still not fully secure.
 
 ## `$_POST` vs `$_GET` vs `$_REQUEST`
 
-PHP has three [superglobals](http://www.php.net/manual/en/language.variables.superglobals.php) for receiving basic (textual) form data:
+PHP has three [superglobals](http://www.php.net/manual/en/language.variables.superglobals.php) for receiving basic text-only form data:
 
 - `$_POST`
 - `$_GET`
 - `$_REQUEST`
+
+<div class="alert alert-info">
+	Later we will look at `$_FILES` which contains info on file based form data.
+</div>
 
 They are associative arrays. `$_POST` contains only data sent using the POST method. `$_GET` contains only data sent using the GET method. `$_REQUEST` contains all of the data from `$_POST` and `$_GET`. 
 
@@ -188,6 +196,26 @@ I recommend using `$_REQUEST` over `$_POST` or `$_GET` because then we don't nee
 			First Name:
 			<input name="first_name" type="text">
 		</label>
+	</form>
+</body>
+</html>
+```
+
+## Sending GET and POST data simultaneously
+
+Though not very practical, it is possible to send both GET and POST vars at the same time:
+
+```php
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Whatever</title>
+</head>
+<body>
+	<?php var_dump($_REQUEST); ?>
+	<form action="?g=yoyo" method="POST">
+		<input name="p" type="text" value="yup">
+		<button>Go</button>
 	</form>
 </body>
 </html>
@@ -562,6 +590,22 @@ $actual_number = rand(1,5);
 	</form>
 </body>
 </html>
+```
+
+## Function for Outputting Request Data
+
+As an alternative to using extract, you may want to use a function like so:
+
+```php
+<?php
+function prq($name, $default='') {
+	if (isset($_REQUEST[$name])) {
+		echo $_REQUEST[$name];
+	} else {
+		echo $default;
+	}
+}
+?>
 ```
 
 <!-- Example for age restriction? -->
