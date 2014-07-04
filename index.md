@@ -111,7 +111,9 @@ I recommend starting with the _PHP_ section and then interjecting components fro
 - [Working with Functions](working-with-functions/)
 - [Form Basics](form-basics/)
 - *Assignment:* [Loops and Functions](assignments/loops-and-functions/)
+<!--
 - [Form Widgets](form-widgets/)
+-->
 - [How the Web Works](how-the-web-works/)
 - [Generating CSS Using PHP](generating-css-using-php/)
 - [Cookies](cookies/)
@@ -210,3 +212,82 @@ http://codegeekz.com/php-image-manipulation-libraries-for-developers/
 
 http://code.tutsplus.com/tutorials/why-you-should-be-using-phps-pdo-for-database-access--net-12059
 http://code.tutsplus.com/tutorials/php-database-access-are-you-doing-it-correctly--net-25338
+
+
+
+
+
+--------------
+http://stackoverflow.com/questions/2119083/php-tutorial-that-is-security-accuracy-and-maintainability-conscious
+	Everyone is saying there isn't anything out there that follows best practices.
+	The material that is available appears to be very fragmented
+Found a good intro to arrays
+	http://phpro.org/tutorials/Introduction-To-Arrays.html
+http://www.homeandlearn.co.uk/php/php.html
+	- seems a little outdated
+	- should review further later if I can't find anything else
+http://www.geekscribes.net/blog/2009/08/14/php-lessons-loops/
+	- Good intro to loops
+	- Several other decent tutorials on this blog - worth reviewing later
+		- see http://www.geekscribes.net/blog/tag/php/page/2/
+http://net.tutsplus.com/tutorials/php/the-problem-with-phps-prepared-statements/
+	- good mysqli tutorial
+Diving Into PHP
+	- seems like a nice slowly paced intro to PHP
+	- http://blog.themeforest.net/screencasts/diving-into-php-day-2/
+
+Store database
+
+character drawer
+
+X   X  XXXXX  X      X       XXX
+X   X  X      X      X      X   X
+XXXXX  XXXX   X      X      X   X
+X   X  X      X      X      X   X
+X   X  XXXXX  XXXXX  XXXXX   XXX
+
+?Calendar
+
+Loading data form google docs spreadsheet
+	Insult Generator
+
+File editor
+File Manager
+
+Styling a google calendar
+
+wysiwig editors
+
+todo list
+	store in cookies
+	store in session
+	store in file
+
+	make 3d text using text-shadow
+	color calculations
+		functions for lighter/darker
+		hue/saturation?
+	make our own grid system
+		row
+		col-x
+		options would be
+			column size
+			gutter size
+			how many columns
+
+Survey - who would win in a fight
+
+Gallery using image server library
+
+function to read simple csv file using explode
+
+<?php
+function css($rules) {
+	foreach ($rules as $selector => $properties) {
+		echo $selector." {\r\n";
+		foreach ($properties as $key => $value) {
+			echo $key.': '.$value.';';
+		}
+		echo "}\r\n";
+	}
+}
