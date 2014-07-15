@@ -31,7 +31,7 @@ Create a new page like the one above, but now instead of using a solid color in 
 
 ```css
 html,body{
-	height: 100%;
+	min-height: 100%;
 }
 ```
 
